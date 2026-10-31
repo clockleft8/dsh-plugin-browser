@@ -7,7 +7,7 @@ DSH（DeepSeek Harness）的插件总览页：把装了的插件列成一页，�
 
 **方式 A（推荐，最省事）**：把仓库地址丢给 DSH
 
-> 帮我把 https://github.com/你的名字/dsh-plugin-browser 装成插件
+> 帮我把 https://github.com/clockleft8/dsh-plugin-browser 装成插件
 
 它会自己 clone、加进 profile、提示你重启。
 
