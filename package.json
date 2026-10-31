@@ -1,0 +1,54 @@
+{
+    "name":  "dsh-plugin-browser",
+    "version":  "0.1.0",
+    "description":  "DSH 插件总览：看清装了哪些插件、分官方/第三方、开关、详情与自检。",
+    "license":  "MIT",
+    "engines":  {
+                    "node":  "\u003e=22",
+                    "dsh":  "\u003e=0.2.0"
+                },
+    "type":  "module",
+    "main":  "index.js",
+    "exports":  {
+                    ".":  "./index.js",
+                    "./client":  "./client.js",
+                    "./package.json":  "./package.json",
+                    "./icon":  "./icon.svg"
+                },
+    "files":  [
+                  "index.js",
+                  "client.js",
+                  "cordis.patch.yml",
+                  "icon.svg",
+                  "README.md",
+                  "LICENSE"
+              ],
+    "dsh":  {
+                "bundle":  {
+                               "patch":  "./cordis.patch.yml"
+                           },
+                "client":  {
+                               "platform":  "web",
+                               "immediately":  true,
+                               "inject":  [
+                                              "slots",
+                                              "@deepseek-ai/dsh-client-ui-conversation"
+                                          ],
+                               "external":  [
+                                                "react"
+                                            ]
+                           }
+            },
+    "keywords":  [
+                     "deepseek-harness",
+                     "dsh-plugin"
+                 ],
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/clockleft8/dsh-plugin-browser.git"
+                   },
+    "homepage":  "https://github.com/clockleft8/dsh-plugin-browser#readme",
+    "publishConfig":  {
+                          "access":  "public"
+                      }
+}
