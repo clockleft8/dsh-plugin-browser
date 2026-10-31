@@ -15,7 +15,7 @@ DSH（DeepSeek Harness）的插件总览页：把装了的插件列成一页，�
 
 ```bash
 cd ~/.dsh/profiles/<你的 profile>/node_modules
-git clone https://github.com/你的名字/dsh-plugin-browser.git
+git clone https://github.com/clockleft8/dsh-plugin-browser.git
 ```
 
 在 profile 的 `package.json` 里加 `"dsh-plugin-browser": "file:./node_modules/dsh-plugin-browser"`，
